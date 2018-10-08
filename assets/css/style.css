@@ -1,0 +1,10 @@
+.flavor{
+    color: darkgrey;
+    font-style: italic;
+}
+.card{
+    height: 400px;
+}
+body{
+    background:lightgrey;
+}
