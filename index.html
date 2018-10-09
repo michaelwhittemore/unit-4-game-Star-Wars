@@ -29,59 +29,60 @@
                 <!-- each character should have a sperate card and col-->
                 <h3> Available Characters:</h3>
             </div>
-            <div id="droid" class="col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"> The Droid Attack on the Wookiees</h5>
-                        <img class="card-img-top" src="assets/images/droid.jpg" alt="Card image cap">
-                        <p>
-                            Health: <span id="droidhealth"> 10000 </span>
-                        </p>
-                        <p class=flavor> "What about the Droid attack on the Wookiees?" </p>
+            <div id="characters"class="row">
+                <div id="droid" class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> The Droid Attack on the Wookiees</h5>
+                            <img class="card-img-top" src="assets/images/droid.jpg" alt="Card image cap">
+                            <p>
+                                Health: <span id="droidhealth"> 10000 </span>
+                            </p>
+                            <p class=flavor> "What about the Droid attack on the Wookiees?" </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="sand" class="col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"> Sand</h5>
-                        <img class="card-img-top" src="assets/images/Sand.jpg" alt="Card image cap">
-                        <p>
-                            Health: <span id="sandhealth"> 10000 </span>
-                        </p>
-                        <p class="flavor"> "I don't like sand. It's coarse and rough and irritating and it gets
-                            everywhere"</p>
+                <div id="sand" class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> Sand</h5>
+                            <img class="card-img-top" src="assets/images/Sand.jpg" alt="Card image cap">
+                            <p>
+                                Health: <span id="sandhealth"> 10000 </span>
+                            </p>
+                            <p class="flavor"> "I don't like sand. It's coarse and rough and irritating and it gets
+                                everywhere"</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="high" class="col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"> The High Ground</h5>
-                        <img class="card-img-top" src="assets/images/thehighground.jpg" alt="Card image cap">
-                        <p>
-                            Health: <span id="highhealth"> 10000 </span>
-                        </p>
-                        <p class="flavor"> "It's over, Anakin. I have the high ground."</p>
+                <div id="high" class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> The High Ground</h5>
+                            <img class="card-img-top" src="assets/images/thehighground.jpg" alt="Card image cap">
+                            <p>
+                                Health: <span id="highhealth"> 10000 </span>
+                            </p>
+                            <p class="flavor"> "It's over, Anakin. I have the high ground."</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="darth" class="col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"> The Tragedy of Darth Plagueis the Wise</h5>
-                        <img class="card-img-top" src="assets/images/DarthPlageuis.jpg" alt="Card image cap">
-                        <p>
-                            Health: <span id="darthhealth"> 10000 </span>
-                        </p>
-                        <p class="flavor">Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you.  </p>
+                <div id="darth" class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> The Tragedy of Darth Plagueis the Wise</h5>
+                            <img class="card-img-top" src="assets/images/DarthPlageuis.jpg" alt="Card image cap">
+                            <p>
+                                Health: <span id="darthhealth"> 10000 </span>
+                            </p>
+                            <p class="flavor">Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not.
+                                It's
+                                not a story the Jedi would tell you. </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--end characters-->
-
-
-
         </div>
         <!--PC Area-->
         <div id="yourcharacter" class="row">
@@ -92,10 +93,37 @@
         <!--Enemy Selection-->
         <div id="enemies" class="row">
             <div class="col-lg-12">
-                <h3> Enemies Available to Attack</h3>
+                <h3> Enemies Available to Attack:</h3>
             </div>
         </div>
+        <!--Attack Button-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3> Fight Section: </h3>
+                <button type="button" id="attack" class="btn btn-danger">Attack!</button>
+            </div>
+        </div>
+        <!--Defender Area-->
+        <div id="defender" class="row">
+            <div class="col-lg-12">
+                <h3> Defender: </h3>
+            </div>
+        </div>
+        <!--Combat text area-->
+        <div class="row">
+            <div class="col-lg-12">
+                <span id="attackmessage"></span><br>
+                <span id="defensemessage"></span><br>
+                <span id="endmessage"></span><br>
 
+            </div>
+        </div>
+        <!--Hidden Reset Button-->
+        <div class="row">
+            <div class="col-lg-12">
+                <button type="button" id="reset" class="btn btn-info">Restart</button>
+            </div>
+        </div>
 
 
 
